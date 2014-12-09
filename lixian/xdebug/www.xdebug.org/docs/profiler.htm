@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv=Content-Type content='text/html; charset=UTF-8'>
+
+	<title>Xdebug: Documentation</title>
+	<meta name="ROBOTS" content="ALL" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+	<meta name="DESCRIPTION" content="Xdebug: A powerful debugger for PHP." />
+	<meta name="KEYWORDS" content="derick, rethans, opensrc, php, php4, xml, xhtml, xml-rpc, soap, blog, weblog" />
+	<meta name="AUTHOR" content="Derick Rethans, as in derick @ php dot net or opensrc @ EFNet" />
+	<link type="text/css" rel="stylesheet" href="../core.css" tppabs="http://www.xdebug.org/core.css"/>
+
+<!-- flattr -->
+<script type="text/javascript">
+/* <![CDATA[ */
+    (function() {
+        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '../../api.flattr.com/js/0.6/load.js-mode=auto'/*tpa=http://api.flattr.com/js/0.6/load.js?mode=auto*/;
+        t.parentNode.insertBefore(s, t);
+    })();
+/* ]]> */</script>
+<!-- flattr -->
+
+
+</head>
+<body>
+	<table style="width: 100%" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td style="height: 64px; width: 18%; background: url(/images/topleft.gif);">&nbsp;</td>
+			<td class="head" style="height: 64px; background: url(/images/topleft.gif);"><img id="logo" align="right" src="../images/xdebug.gif" tppabs="http://www.xdebug.org/images/xdebug.gif" alt="Xdebug"/></td>
+			<td style="height: 64px; width: 18%; background: url(/images/topleft.gif);">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><span class="serif">
+			
+<!-- MAIN FEATURE START -->
+
+<span class="sans">XDEBUG EXTENSION FOR PHP | DOCUMENTATION</span><br />
+
+<div id="menu-docs">
+<div id="menu">
+<span class="sans">
+<a href="javascript:if(confirm('http://www.xdebug.org/index.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.xdebug.org/index.php'" tppabs="http://www.xdebug.org/index.php">home</a> |
+<a href="javascript:if(confirm('http://www.xdebug.org/updates.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.xdebug.org/updates.php'" tppabs="http://www.xdebug.org/updates.php">updates</a> |
+<a href="javascript:if(confirm('http://www.xdebug.org/download.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.xdebug.org/download.php'" tppabs="http://www.xdebug.org/download.php">download</a> |
+<a href="index.htm" tppabs="http://www.xdebug.org/docs/">documentation</a> |
+<a href="javascript:if(confirm('http://www.xdebug.org/contributing.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.xdebug.org/contributing.php'" tppabs="http://www.xdebug.org/contributing.php">contributing</a> |
+<a href="javascript:if(confirm('http://www.xdebug.org/license.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.xdebug.org/license.php'" tppabs="http://www.xdebug.org/license.php">license</a> |
+<a href="javascript:if(confirm('http://www.xdebug.org/support.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.xdebug.org/support.php'" tppabs="http://www.xdebug.org/support.php">support</a> |
+<a href="javascript:if(confirm('http://bugs.xdebug.org/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://bugs.xdebug.org/'" tppabs="http://bugs.xdebug.org/">issue tracker</a>
+</span>
+</div>
+<br />
+
+<div id="support" style="float: right; text-align: center; width: 200px; border: 1px solid rgba( 0, 68, 17, 0.6); margin-right: 20px; margin-left: 20px; padding: 5px;">
+<p class="buy-support">
+If you like Xdebug, please consider giving a<br/>"<a href="javascript:if(confirm('http://www.xdebug.org/donate.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.xdebug.org/donate.php'" tppabs="http://www.xdebug.org/donate.php">donation</a>".
+<br/>
+<br/>
+</p>
+<p class="buy-support">
+Or <a href="javascript:if(confirm('https://flattr.com/about  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='https://flattr.com/about'" tppabs="https://flattr.com/about">Flattr</a> this website:
+<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="javascript:if(confirm('http://xdebug.org/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://xdebug.org/'" tppabs="http://xdebug.org/"></a>
+<noscript><a href="javascript:if(confirm('http://flattr.com/thing/565889/Xdebugs-website  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://flattr.com/thing/565889/Xdebugs-website'" tppabs="http://flattr.com/thing/565889/Xdebugs-website" target="_blank">
+<img src="../../api.flattr.com/button/flattr-badge-large.png" tppabs="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>
+</p>
+</div>
+
+禄 Documentation for: <b>Xdebug 2</b><br />
+禄 Feature: <b>Profiling PHP Scripts</b><br />
+<hr />
+</div>
+<p class='intro'>Xdebug's built-in profiler allows you to find bottlenecks in your
+		script and visualize those with an external tool such as KCacheGrind or
+		WinCacheGrind.</p>
+<hr class='light'/>
+
+<a name="introduction"></a>
+<h2>Introduction</h2>
+
+<p>Xdebug's Profiler is a powerful tool that gives you the ability to analyze
+your PHP code and determine bottlenecks or generally see which parts of your
+code are slow and could use a speed boost. The profiler in Xdebug 2 outputs
+profiling information in the form of a cachegrind compatible file.  This allows
+you to use the excellent <a href="javascript:if(confirm('http://kcachegrind.sf.net/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://kcachegrind.sf.net/'" tppabs="http://kcachegrind.sf.net/">KCacheGrind</a>
+tool (Linux/Windows, KDE) to analyse your profiling data. If you are on Linux
+you can install KCacheGrind with your favourite package manager; if you are on
+Windows you can get precompiled binaries of KCacheGrind at 
+<a href="javascript:if(confirm('http://sourceforge.net/projects/precompiledbin/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://sourceforge.net/projects/precompiledbin/'" tppabs="http://sourceforge.net/projects/precompiledbin/">SourceForge</a>.</p>
+
+<p>Users of Windows can also use 
+<a href="javascript:if(confirm('http://sourceforge.net/projects/wincachegrind  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://sourceforge.net/projects/wincachegrind'" tppabs="http://sourceforge.net/projects/wincachegrind">WinCacheGrind</a>, the
+functionality is different from KCacheGrind so the section that documents the
+use of KCacheGrind on this page doesn't apply to this program. There is also
+an alternative profile information presentation tool called
+<a href="javascript:if(confirm('http://code.google.com/p/xdebugtoolkit/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://code.google.com/p/xdebugtoolkit/'" tppabs="http://code.google.com/p/xdebugtoolkit/">xdebugtoolkit</a>, a web
+based front-end called <a
+href="javascript:if(confirm('http://code.google.com/p/webgrind/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://code.google.com/p/webgrind/'" tppabs="http://code.google.com/p/webgrind/">Webgrind</a> and a Java based tool
+called <a
+href="javascript:if(confirm('http://sourceforge.net/projects/xcallgraph/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://sourceforge.net/projects/xcallgraph/'" tppabs="http://sourceforge.net/projects/xcallgraph/">XCallGraph</a>.</p>
+
+<p>In case you can not use KDE (or do not want to use KDE) the kcachegrind
+package also comes with a perl script "ct_annotate" which produces ASCII output
+from the profiler trace files.</p>
+
+<a name="starting"></a>
+<h2>Starting The Profiler</h2>
+
+<p>Profiling is enabled by setting the
+<a href="all_settings.htm#profiler_enable" tppabs="http://www.xdebug.org/docs/all_settings#profiler_enable">xdebug.profiler_enable</a> setting
+to 1 in php.ini. This instructs Xdebug to start writing profiling information
+into the dump directory configured with the
+<a href="all_settings.htm#profiler_output_dir" tppabs="http://www.xdebug.org/docs/all_settings#profiler_output_dir">xdebug.profiler_output_dir</a>
+directive. The name of the generated file always starts with
+"<span class="filename">cachegrind.out.</span>" and ends with either the PID
+(process ID) of the PHP (or Apache) process or the crc32 hash of the 
+directory containing the initially debugged script. Make sure you have enough
+space in your <a href="all_settings.htm#profiler_output_dir" tppabs="http://www.xdebug.org/docs/all_settings#profiler_output_dir">xdebug.profiler_output_dir</a> as the amount of information generated by the profiler can be
+enormous for complex scripts, for example up to 500MB for a complex application
+like <a href="javascript:if(confirm('http://ez.no/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://ez.no/'" tppabs="http://ez.no/">eZ Publish</a>.</p>
+
+<p>You can also selectively enable the profiler with the
+<a href="all_settings.htm#profiler_enable_trigger" tppabs="http://www.xdebug.org/docs/all_settings#profiler_enable_trigger">xdebug.profiler_enable_trigger</a> setting set to 1. If it is set to 1, then you can
+enable the profiler by using a GET/POST or COOKIE variable of the name
+XDEBUG_PROFILE. The FireFox 2 extension that can be used to enable the debugger
+(see <a href="remote.htm#firefox-ext" tppabs="http://www.xdebug.org/docs/remote#firefox-ext">HTTP Debug Sessions</a>) can also be
+used with this setting. In order for the trigger to work properly,
+<a href="all_settings.htm#profiler_enable" tppabs="http://www.xdebug.org/docs/all_settings#profiler_enable">xdebug.profiler_enable</a> needs to be set to 0.</p>
+
+<a name="misc"></a>
+<h2>Analysing Profiles</h2>
+
+<p>After a profile information file has been generated you can open it with
+<a href="javascript:if(confirm('http://kcachegrind.sf.net/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://kcachegrind.sf.net/'" tppabs="http://kcachegrind.sf.net/">KCacheGrind</a>:</p>
+
+<p><img src="../images/docs/kc-open.png" tppabs="http://www.xdebug.org/images/docs/kc-open.png"/></p>
+
+<p>Once the file is opened you have plenty of information available in the 
+different panes of <a href="javascript:if(confirm('http://kcachegrind.sf.net/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://kcachegrind.sf.net/'" tppabs="http://kcachegrind.sf.net/">KCacheGrind</a>. On the left side you find the "Flat Profile"
+pane showing all functions in your script sorted by time spend in this function,
+and all its children.
+<img class="l" src="../images/docs/kc-profile.png" tppabs="http://www.xdebug.org/images/docs/kc-profile.png" align="left"/>
+The second column "Self" shows the time spend in this function (without its
+children), the third column "Called" shows how often a specific function was
+called and the last column "Function" shows the name of the function. Xdebug
+changes internal PHP function names by prefixing the function name with
+"php::" and include files are handled in a special way too. Calls to include
+(and include_one, require and require_once) are followed by "::" and the 
+filename of the included file. In the screenshot on the left you can see this
+for "include::/home/httpd/ez_34/v..." and an example of an internal PHP
+function is "php::mysql_query".
+<img class="r" src="../images/docs/kc-percentage.png" tppabs="http://www.xdebug.org/images/docs/kc-percentage.png" align="right"/>
+The numbers in the first two columns can be
+either percentages of the full running time of the script (like in the
+example) or absolute time (1 unit is 1/1.000.000th of a second). You can
+switch between the two modes with the button you see on the right.</p>
+
+<p>The pane on the right contains an upper and lower pane. The upper one
+shows information about which functions called the current selected function
+("eztemplatedesignresource-&gt;executecompiledtemplate in the screenshot).
+<img class="r" src="../images/docs/kc-right-call.png" tppabs="http://www.xdebug.org/images/docs/kc-right-call.png" align="right"/>
+The lower pane shows information about the functions that the current selected
+function called.</p>
+
+<p>The "Cost" column in the upper pane shows the time spend in the current
+selected function while being called from the function in the list. The numbers
+in the Cost column added up will always be 100%. The "Cost" column in the lower
+pane shows the time spend while calling the function from the list. While adding
+the numbers in this list up, you will most likely never reach 100% as the
+selected function itself will also takes time to execute.</p>
+
+<p>The "All Callers" and "All Calls" tabs show not only the direct call from
+<img class="l" src="../images/docs/kc-right-callers.png" tppabs="http://www.xdebug.org/images/docs/kc-right-callers.png" align="left"/>
+which the function was called respectively all directly made
+function calls but also function calls made more levels up and down.
+The upper pane in the screenshot on the left shows all functions calling the
+current selected one, both directly and indirectly with other functions
+inbetween them on the stack. The "Distance" column shows how many function
+calls are between the listed and the current selected one (-1). If there are
+different distances between two functions, it is shown as a range (for example
+"5-24". The number in parentheses is the median distance. The lower pane is
+similar except that it shows information on functions called from the current
+selected one, again either direct or indirect.</p>
+		
+<hr style='clear: both'/>
+<h2>Related Settings</h2><div class='settings'>
+<a name='profiler_append'></a>
+<hr class='light'/>
+<div class='name'>xdebug.profiler_append</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>0</span>
+<div class='description'>When this setting is set to 1, profiler files will not be overwritten when
+a new request would map to the same file (depnding on the <a href="all_settings.htm#profiler_output_name" tppabs="http://www.xdebug.org/docs/all_settings#profiler_output_name">xdebug.profiler_output_name</a> setting.
+Instead the file will be appended to with the new profile.</div>
+<a name='profiler_enable'></a>
+<hr class='light'/>
+<div class='name'>xdebug.profiler_enable</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>0</span>
+<div class='description'>Enables Xdebug's profiler which creates files in the
+<a href="all_settings.htm#profiler_output_dir" tppabs="http://www.xdebug.org/docs/all_settings#profiler_output_dir">profile output directory</a>.  Those files can be
+read by KCacheGrind to visualize your data.  This setting can not be set in
+your script with ini_set(). If you want to selectively enable the profiler,
+please set <a href="all_settings.htm#profiler_enable_trigger" tppabs="http://www.xdebug.org/docs/all_settings#profiler_enable_trigger">xdebug.profiler_enable_trigger</a> to 1 <strong>instead</strong> of using
+this setting.</div>
+<a name='profiler_enable_trigger'></a>
+<hr class='light'/>
+<div class='name'>xdebug.profiler_enable_trigger</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>0</span>
+<div class='description'>When this setting is set to 1, you can trigger the generation of profiler
+files by using the XDEBUG_PROFILE GET/POST parameter, or set a cookie with the
+name XDEBUG_PROFILE. This will then write the profiler data to
+<a href="all_settings.htm#profiler_output_dir" tppabs="http://www.xdebug.org/docs/all_settings#profiler_output_dir">defined directory</a>. In order to prevent the profiler
+to generate profile files for each request, you need to set
+<a href="all_settings.htm#profiler_enable" tppabs="http://www.xdebug.org/docs/all_settings#profiler_enable">xdebug.profiler_enable</a> to 0.</div>
+<a name='profiler_output_dir'></a>
+<hr class='light'/>
+<div class='name'>xdebug.profiler_output_dir</div>
+Type: <span class='type'>string</span>, Default value: <span class='default'>/tmp</span>
+<div class='description'>The directory where the profiler output will be written to, make sure that
+the user who the PHP will be running as has write permissions to that
+directory. This setting can not be set in your script with ini_set().</div>
+<a name='profiler_output_name'></a>
+<hr class='light'/>
+<div class='name'>xdebug.profiler_output_name</div>
+Type: <span class='type'>string</span>, Default value: <span class='default'>cachegrind.out.%p</span>
+<div class='description'><p>This setting determines the name of the file that is used to dump
+traces into. The setting specifies the format with format specifiers, very
+similar to sprintf() and strftime(). There are several format specifiers
+that can be used to format the file name.</p>
+
+<p>See the <a href="all_settings.htm#trace_output_name" tppabs="http://www.xdebug.org/docs/all_settings#trace_output_name">xdebug.trace_output_name</a> documentation for the supported
+specifiers.</p>
+</div>
+</div>
+<hr />
+<h2>Related Functions</h2><div class='functions'>
+<a name='xdebug_get_profiler_filename'></a>
+<hr class='light'/>
+<div class='name'><span class='type'>string</span> xdebug_get_profiler_filename()</div>
+<div class='short-description'>Returns the profile information filename</div>
+<div class='description'>
+<p>
+Returns the name of the file which is used to save profile information to.
+
+</p></div>
+</div>
+<hr />
+</div>
+<!-- MAIN FEATURE END -->
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="4">
+<div class="copy">
+This site and all of its contents are
+Copyright &copy; 2002-2014 by Derick Rethans.<br />
+All rights reserved.
+</div>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>

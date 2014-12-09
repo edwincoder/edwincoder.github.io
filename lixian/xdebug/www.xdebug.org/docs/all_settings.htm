@@ -1,0 +1,717 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv=Content-Type content='text/html; charset=UTF-8'>
+
+	<title>Xdebug: Documentation</title>
+	<meta name="ROBOTS" content="ALL" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+	<meta name="DESCRIPTION" content="Xdebug: A powerful debugger for PHP." />
+	<meta name="KEYWORDS" content="derick, rethans, opensrc, php, php4, xml, xhtml, xml-rpc, soap, blog, weblog" />
+	<meta name="AUTHOR" content="Derick Rethans, as in derick @ php dot net or opensrc @ EFNet" />
+	<link type="text/css" rel="stylesheet" href="../core.css" tppabs="http://www.xdebug.org/core.css"/>
+
+<!-- flattr -->
+<script type="text/javascript">
+/* <![CDATA[ */
+    (function() {
+        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '../../api.flattr.com/js/0.6/load.js-mode=auto'/*tpa=http://api.flattr.com/js/0.6/load.js?mode=auto*/;
+        t.parentNode.insertBefore(s, t);
+    })();
+/* ]]> */</script>
+<!-- flattr -->
+
+
+</head>
+<body>
+	<table style="width: 100%" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td style="height: 64px; width: 18%; background: url(/images/topleft.gif);">&nbsp;</td>
+			<td class="head" style="height: 64px; background: url(/images/topleft.gif);"><img id="logo" align="right" src="../images/xdebug.gif" tppabs="http://www.xdebug.org/images/xdebug.gif" alt="Xdebug"/></td>
+			<td style="height: 64px; width: 18%; background: url(/images/topleft.gif);">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><span class="serif">
+			
+<!-- MAIN FEATURE START -->
+
+<span class="sans">XDEBUG EXTENSION FOR PHP | DOCUMENTATION</span><br />
+
+<div id="menu-docs">
+<div id="menu">
+<span class="sans">
+<a href="javascript:if(confirm('http://www.xdebug.org/index.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.xdebug.org/index.php'" tppabs="http://www.xdebug.org/index.php">home</a> |
+<a href="javascript:if(confirm('http://www.xdebug.org/updates.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.xdebug.org/updates.php'" tppabs="http://www.xdebug.org/updates.php">updates</a> |
+<a href="javascript:if(confirm('http://www.xdebug.org/download.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.xdebug.org/download.php'" tppabs="http://www.xdebug.org/download.php">download</a> |
+<a href="index.htm" tppabs="http://www.xdebug.org/docs/">documentation</a> |
+<a href="javascript:if(confirm('http://www.xdebug.org/contributing.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.xdebug.org/contributing.php'" tppabs="http://www.xdebug.org/contributing.php">contributing</a> |
+<a href="javascript:if(confirm('http://www.xdebug.org/license.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.xdebug.org/license.php'" tppabs="http://www.xdebug.org/license.php">license</a> |
+<a href="javascript:if(confirm('http://www.xdebug.org/support.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.xdebug.org/support.php'" tppabs="http://www.xdebug.org/support.php">support</a> |
+<a href="javascript:if(confirm('http://bugs.xdebug.org/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://bugs.xdebug.org/'" tppabs="http://bugs.xdebug.org/">issue tracker</a>
+</span>
+</div>
+<br />
+
+<div id="support" style="float: right; text-align: center; width: 200px; border: 1px solid rgba( 0, 68, 17, 0.6); margin-right: 20px; margin-left: 20px; padding: 5px;">
+<p class="buy-support">
+If you like Xdebug, please consider giving a<br/>"<a href="javascript:if(confirm('http://www.xdebug.org/donate.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.xdebug.org/donate.php'" tppabs="http://www.xdebug.org/donate.php">donation</a>".
+<br/>
+<br/>
+</p>
+<p class="buy-support">
+Or <a href="javascript:if(confirm('https://flattr.com/about  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='https://flattr.com/about'" tppabs="https://flattr.com/about">Flattr</a> this website:
+<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="javascript:if(confirm('http://xdebug.org/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://xdebug.org/'" tppabs="http://xdebug.org/"></a>
+<noscript><a href="javascript:if(confirm('http://flattr.com/thing/565889/Xdebugs-website  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://flattr.com/thing/565889/Xdebugs-website'" tppabs="http://flattr.com/thing/565889/Xdebugs-website" target="_blank">
+<img src="../../api.flattr.com/button/flattr-badge-large.png" tppabs="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>
+</p>
+</div>
+
+禄 Documentation for: <b>Xdebug 2</b><br />
+禄 Feature: <b>All Settings</b><br />
+<hr />
+</div>
+<p class='intro'>This section describes all available configuration settings available in Xdebug.</p>
+<hr />
+<h2>Related Settings</h2><div class='settings'>
+<a name='auto_trace'></a>
+<hr class='light'/>
+<div class='name'>xdebug.auto_trace</div>
+Type: <span class='type'>boolean</span>, Default value: <span class='default'>0</span>
+<div class='description'>When this setting is set to on, the tracing of function calls will be
+enabled just before the script is run. This makes it possible to trace code in
+the <a href="javascript:if(confirm('http://www.php.net/manual/en/configuration.directives.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.php.net/manual/en/configuration.directives.php#ini.auto-prepend-file'" tppabs="http://www.php.net/manual/en/configuration.directives.php#ini.auto-prepend-file">auto_prepend_file</a>.</div>
+<a name='cli_color'></a>
+<hr class='light'/>
+<div class='name'>xdebug.cli_color</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>0</span>, Introduced in <span class='type'>Xdebug > 2.2</span>
+<div class='description'><p>If this setting is 1, Xdebug will color var_dumps and stack traces
+		output when in CLI mode and when the output is a tty. On Windows, the
+		<a href="javascript:if(confirm('http://adoxa.110mb.com/ansicon/  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://adoxa.110mb.com/ansicon/'" tppabs="http://adoxa.110mb.com/ansicon/">ANSICON</a> tool needs to be
+		installed.</p>
+		<p>If the setting is 2, then Xdebug will always color var_dumps and stack
+		trace, no matter whether it's connected to a tty or whether ANSICON is
+		installed. In this case, you might end up seeing escape codes.</p>
+		<p>See <a href="javascript:if(confirm('http://drck.me/clicolor-9cr  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://drck.me/clicolor-9cr'" tppabs="http://drck.me/clicolor-9cr">this article</a> for some
+		more information.</p></div>
+<a name='collect_assignments'></a>
+<hr class='light'/>
+<div class='name'>xdebug.collect_assignments</div>
+Type: <span class='type'>boolean</span>, Default value: <span class='default'>0</span>, Introduced in <span class='type'>Xdebug > 2.1</span>
+<div class='description'>This setting, defaulting to 0, controls whether Xdebug should add
+variable assignments to function traces.</div>
+<a name='collect_includes'></a>
+<hr class='light'/>
+<div class='name'>xdebug.collect_includes</div>
+Type: <span class='type'>boolean</span>, Default value: <span class='default'>1</span>
+<div class='description'>This setting, defaulting to 1, controls whether Xdebug should write the
+filename used in include(), include_once(), require() or require_once() to the
+trace files.</div>
+<a name='collect_params'></a>
+<hr class='light'/>
+<div class='name'>xdebug.collect_params</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>0</span>
+<div class='description'><p>This setting, defaulting to 0, controls whether Xdebug should collect
+the parameters passed to functions when a function call is recorded in either
+the function trace or the stack trace.</p>
+<p>The setting defaults to 0 because for very large
+scripts it may use huge amounts of memory and therefore make it impossible for
+the huge script to run. You can most safely turn this setting on, but you can
+expect some problems in scripts with a lot of function calls and/or huge data
+structures as parameters. Xdebug 2 will not have this problem with increased
+memory usage, as it will never store this information in memory. Instead it
+will only be written to disk. This means that you need to have a look at the
+disk usage though.</p>
+<p>This setting can have four different values. For each of the values a
+different amount of information is shown. Below you will see what information
+each of the values provides. See also the introduction of the feature
+<a href="stack_trace.htm" tppabs="http://www.xdebug.org/docs/stack_trace">Stack Traces</a> for a few screenshots.</p>
+<table class='table'>
+<tr><th>Value</th><th>Argument Information Shown</th></tr>
+<tr><td class='ctr'>0</td><td>None.</td></tr>
+<tr><td class='ctr'>1</td><td>Type and number of elements (f.e. string(6), array(8)).</td></tr>
+<tr><td class='ctr'>2</td><td><p>Type and number of elements, with a tool tip for the full information <sup>1</sup>.</p></td></tr>
+<tr><td class='ctr'>3</td><td>Full variable contents (with the limits respected as set by <a href="all_settings.htm#var_display_max_children" tppabs="http://www.xdebug.org/docs/all_settings#var_display_max_children">xdebug.var_display_max_children</a>, <a href="all_settings.htm#var_display_max_data" tppabs="http://www.xdebug.org/docs/all_settings#var_display_max_data">xdebug.var_display_max_data</a> and <a href="all_settings.htm#var_display_max_depth" tppabs="http://www.xdebug.org/docs/all_settings#var_display_max_depth">xdebug.var_display_max_depth</a>.</td></tr>
+<tr><td class='ctr'>4</td><td>Full variable contents and variable name.</td></tr>
+<tr><td class='ctr'>5</td><td>PHP serialized variable contents, without the name. <i>(New in Xdebug 2.3)</i></td></tr>
+</table>
+<p><sup>1</sup></a> in the CLI version of PHP it will not have the tool tip, nor in output files.</p>
+</div>
+<a name='collect_return'></a>
+<hr class='light'/>
+<div class='name'>xdebug.collect_return</div>
+Type: <span class='type'>boolean</span>, Default value: <span class='default'>0</span>
+<div class='description'><p>This setting, defaulting to 0, controls whether Xdebug should write the
+return value of function calls to the trace files.</p>
+<p>For computerized trace files (<a href="all_settings.htm#trace_format" tppabs="http://www.xdebug.org/docs/all_settings#trace_format">xdebug.trace_format</a>=1) this only works from Xdebug 2.3 onwards.</p></div>
+<a name='collect_vars'></a>
+<hr class='light'/>
+<div class='name'>xdebug.collect_vars</div>
+Type: <span class='type'>boolean</span>, Default value: <span class='default'>0</span>
+<div class='description'>This setting tells Xdebug to gather information about which variables
+are used in a certain scope. This analysis can be quite slow as Xdebug has
+to reverse engineer PHP's opcode arrays. This setting will not record which
+values the different variables have, for that use <a href="all_settings.htm#collect_params" tppabs="http://www.xdebug.org/docs/all_settings#collect_params">xdebug.collect_params</a>.
+This setting needs to be enabled only if you wish to use
+<a href="all_functions.htm#xdebug_get_declared_vars" tppabs="http://www.xdebug.org/docs/all_functions#xdebug_get_declared_vars">xdebug_get_declared_vars()</a>.</div>
+<a name='coverage_enable'></a>
+<hr class='light'/>
+<div class='name'>xdebug.coverage_enable</div>
+Type: <span class='type'>boolean</span>, Default value: <span class='default'>1</span>, Introduced in <span class='type'>Xdebug >= 2.2</span>
+<div class='description'>If this setting is set to 0, then Xdebug will not set-up internal
+		structures to allow code coverage. This speeds up Xdebug quite a bit,
+		but of course, <a href="code_coverage.htm" tppabs="http://www.xdebug.org/docs/code_coverage">Code Coverage Analysis</a> won't work.</div>
+<a name='default_enable'></a>
+<hr class='light'/>
+<div class='name'>xdebug.default_enable</div>
+Type: <span class='type'>boolean</span>, Default value: <span class='default'>1</span>
+<div class='description'>If this setting is 1, then stacktraces will be shown by default on an
+error event. You can disable showing stacktraces from your code with
+<a href="all_functions.htm#xdebug_disable" tppabs="http://www.xdebug.org/docs/all_functions#xdebug_disable">xdebug_disable()</a>. As this is one of the basic functions of Xdebug, it is
+advisable to leave this setting set to 1.</div>
+<a name='dump.*'></a>
+<hr class='light'/>
+<div class='name'>xdebug.dump.*</div>
+Type: <span class='type'>string</span>, Default value: <span class='default'>Empty</span>
+<div class='description'><p>* can be any of COOKIE, FILES, GET, POST, REQUEST, SERVER, SESSION.
+These seven settings control which data from the superglobals is shown when an
+error situation occurs.</p>
+<p>Each of those php.ini setting can consist of a comma seperated list of
+variables from this superglobal to dump, or <code>*</code> for all of them.
+Make sure you do not add spaces in this setting.</p>
+<p>In order to dump the REMOTE_ADDR and the REQUEST_METHOD when an error
+occurs, and all GET parameters, add these settings:</p>
+<pre>
+xdebug.dump.SERVER = REMOTE_ADDR,REQUEST_METHOD
+xdebug.dump.GET = *
+</pre>
+</div>
+<a name='dump_globals'></a>
+<hr class='light'/>
+<div class='name'>xdebug.dump_globals</div>
+Type: <span class='type'>boolean</span>, Default value: <span class='default'>1</span>
+<div class='description'>Controls whether the values of the superglobals as defined by the <a href="all_settings.htm#dump.*" tppabs="http://www.xdebug.org/docs/all_settings#dump.*">xdebug.dump.*</a> settings should be shown or not.</div>
+<a name='dump_once'></a>
+<hr class='light'/>
+<div class='name'>xdebug.dump_once</div>
+Type: <span class='type'>boolean</span>, Default value: <span class='default'>1</span>
+<div class='description'>Controls whether the values of the superglobals should be dumped on all
+error situations (set to 0) or only on the first (set to 1).</div>
+<a name='dump_undefined'></a>
+<hr class='light'/>
+<div class='name'>xdebug.dump_undefined</div>
+Type: <span class='type'>boolean</span>, Default value: <span class='default'>0</span>
+<div class='description'>If you want to dump undefined values from the superglobals you should set
+this setting to 1, otherwise leave it set to 0.</div>
+<a name='extended_info'></a>
+<hr class='light'/>
+<div class='name'>xdebug.extended_info</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>1</span>
+<div class='description'>Controls whether Xdebug should enforce 'extended_info' mode for the PHP
+parser; this allows Xdebug to do file/line breakpoints with the remote
+debugger. When tracing or profiling scripts you generally want to turn off this
+option as PHP's generated oparrays will increase with about a third of the size
+slowing down your scripts. This setting can not be set in your scripts with
+ini_set(), but only in php.ini.</div>
+<a name='file_link_format'></a>
+<hr class='light'/>
+<div class='name'>xdebug.file_link_format</div>
+Type: <span class='type'>string</span>, Default value: <span class='default'></span>, Introduced in <span class='type'>Xdebug > 2.1</span>
+<div class='description'><p>This setting determines the format of the links that are made in
+the display of stack traces where file names are used. This allows IDEs to set
+up a link-protocol that makes it possible to go directly to a line and file by
+clicking on the filenames that Xdebug shows in stack traces. An example format might look like:
+</p>
+<pre>
+myide://%f@%l
+</pre>
+<p>
+The possible format specifiers are:
+</p>
+<table class="table">
+<tr><th>Specifier</th><th>Meaning</th></tr>
+<tr><td class="ctr">%f</td><td>the filename</td></tr>
+<tr><td class="ctr">%l</td><td>the line number</td></tr>
+</table>
+<p>
+For various IDEs/OSses there are some instructions listed on how to make this work:
+</p>
+<h4>Firefox on Linux</h4>
+<ul>
+<li>Open <a href="about:config">about:config</a></li>
+<li>Add a new boolean setting "network.protocol-handler.expose.xdebug" and set it to "false"</li>
+<li>Add the following into a shell script <code>~/bin/ff-xdebug.sh</code>:
+<pre>
+#! /bin/sh
+
+f=`echo $1 | cut -d @ -f 1 | sed 's/xdebug:\/\///'`
+l=`echo $1 | cut -d @ -f 2`
+</pre>
+Add to that one of (depending whether you have komodo, gvim or netbeans):
+<ul>
+	<li><code>komodo $f -l $l</code></li>
+	<li><code>gvim --remote-tab +$l $f</code></li>
+	<li><code>netbeans "$f:$l"</code></li>
+</ul>
+</pre>
+</li>
+<li>Make the script executable with <code>chmod +x ~/bin/ff-xdebug.sh</code></li>
+<li>Set the <a href="all_settings.htm#file_link_format" tppabs="http://www.xdebug.org/docs/all_settings#file_link_format">xdebug.file_link_format</a> setting to <code>xdebug://%f@%l</code></li>
+</ul>
+
+<h4>Windows and netbeans</h4>
+<ul>
+<li>Create the file <code>netbeans.bat</code> and save it in your path (<code>C:\Windows</code> will work):
+<pre>
+@echo off
+setlocal enableextensions enabledelayedexpansion
+set NETBEANS=%1
+set FILE=%~2
+%NETBEANS% --nosplash --console suppress --open "%FILE:~19%"
+nircmd win activate process netbeans.exe
+</pre>
+<p>
+	<b>Note:</b> Remove the last line if you don't have <code>nircmd</code>.
+</p>
+</li>
+<li>Save the following code as <code>netbeans_protocol.reg</code>:
+<pre>
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\netbeans]
+"URL Protocol"=""
+@="URL:Netbeans Protocol"
+
+[HKEY_CLASSES_ROOT\netbeans\DefaultIcon]
+@="\"C:\\Program Files\\NetBeans 7.1.1\\bin\\netbeans.exe,1\""
+
+[HKEY_CLASSES_ROOT\netbeans\shell]
+
+[HKEY_CLASSES_ROOT\netbeans\shell\open]
+
+[HKEY_CLASSES_ROOT\netbeans\shell\open\command]
+@="\"C:\\Windows\\netbeans.bat\" \"C:\\Program Files\\NetBeans 7.1.1\\bin\\netbeans.exe\" \"%1\""
+</pre>
+<p>
+	<b>Note:</b> Make sure to change the path to Netbeans (twice), as well as
+	the <code>netbeans.bat</code> batch file if you saved it somewhere else
+	than <code>C:\Windows\</code>.
+</p>
+</li>
+<li>Double click on the <code>netbeans_protocol.reg</code> file to import it
+into the registry.</li>
+<li>Set the <a href="all_settings.htm#file_link_format" tppabs="http://www.xdebug.org/docs/all_settings#file_link_format">xdebug.file_link_format</a> setting to <code>xdebug.file_link_format =
+"netbeans://open/?f=%f:%l"</code></li>
+</ul>
+</div>
+<a name='force_display_errors'></a>
+<hr class='light'/>
+<div class='name'>xdebug.force_display_errors</div>
+Type: <span class='type'>int</span>, Default value: <span class='default'>0</span>, Introduced in <span class='type'>Xdebug 2.3</span>
+<div class='description'><p>If this setting is set to <code>1</code> then errors will
+		<b>always</b> be displayed, no matter what the setting of PHP's <a
+		href="javascript:if(confirm('http://php.net/manual/en/errorfunc.configuration.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://php.net/manual/en/errorfunc.configuration.php#ini.display-errors'" tppabs="http://php.net/manual/en/errorfunc.configuration.php#ini.display-errors">display_errors</a>
+		is.</p></div>
+<a name='force_error_reporting'></a>
+<hr class='light'/>
+<div class='name'>xdebug.force_error_reporting</div>
+Type: <span class='type'>int</span>, Default value: <span class='default'>0</span>, Introduced in <span class='type'>Xdebug 2.3</span>
+<div class='description'><p>This setting is a bitmask, like <a
+		href="javascript:if(confirm('http://php.net/manual/en/errorfunc.configuration.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://php.net/manual/en/errorfunc.configuration.php#ini.error-reporting'" tppabs="http://php.net/manual/en/errorfunc.configuration.php#ini.error-reporting">error_reporting</a>.
+		This bitmask will be logically ORed with the bitmask represented by <a
+		href="javascript:if(confirm('http://php.net/manual/en/errorfunc.configuration.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://php.net/manual/en/errorfunc.configuration.php#ini.error-reporting'" tppabs="http://php.net/manual/en/errorfunc.configuration.php#ini.error-reporting">error_reporting</a>
+		to dermine which errors should be displayed. This setting can only be
+		made in php.ini and allows you to force certain errors from being
+		shown no matter what an application does with <a
+		href="javascript:if(confirm('http://php.net/manual/en/function.ini-set.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://php.net/manual/en/function.ini-set.php'" tppabs="http://php.net/manual/en/function.ini-set.php">ini_set()</a>.</p></div>
+<a name='halt_level'></a>
+<hr class='light'/>
+<div class='name'>xdebug.halt_level</div>
+Type: <span class='type'>int</span>, Default value: <span class='default'>0</span>, Introduced in <span class='type'>Xdebug 2.3</span>
+<div class='description'><p>This setting allows you to configure a mask that determines
+whether, and which, notices and/or warnings get converted to errors. You can
+configure notices and warnings that are generated by PHP, and notices and
+warnings that you generate yourself (by means of trigger_error()). For example,
+to convert the warning of strlen() (without arguments) to an error, you would
+do:</p>
+<pre>
+ini_set('xdebug.halt_level', E_WARNING);
+echo "Hi!\n";
+</pre>
+<p>Which will then result in the showing of the error message, and the abortion
+of the script. <code>echo "Hi!\n";</code> will not be executed.</p>
+<p>The setting is a bit mask, so to convert all notices and warnings into
+errors for all applications, you can set this in php.ini:</p>
+<pre>
+xdebug.halt_level=E_WARNING|E_NOTICE|E_USER_WARNING|E_USER_NOTICE
+</pre>
+<p>The bitmask only supports the four level that are mentioned above.</p></div>
+<a name='idekey'></a>
+<hr class='light'/>
+<div class='name'>xdebug.idekey</div>
+Type: <span class='type'>string</span>, Default value: <span class='default'>*complex*</span>
+<div class='description'>Controls which IDE Key Xdebug should pass on to the DBGp debugger handler.
+The default is based on environment settings. First the environment setting
+DBGP_IDEKEY is consulted, then USER and as last USERNAME.  The default is set
+to the first environment variable that is found. If none could be found the
+setting has as default ''. If this setting is set, it always overrides
+the environment variables.</div>
+<a name='manual_url'></a>
+<hr class='light'/>
+<div class='name'>xdebug.manual_url</div>
+Type: <span class='type'>string</span>, Default value: <span class='default'>http://www.php.net</span>, Introduced in <span class='type'>Xdebug < 2.2.1</span>
+<div class='description'>This is the base url for the links from the function traces and error
+message to the manual pages of the function from the message. It is advisable
+to set this setting to use the closest mirror.</div>
+<a name='max_nesting_level'></a>
+<hr class='light'/>
+<div class='name'>xdebug.max_nesting_level</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>100</span>
+<div class='description'>Controls the protection mechanism for infinite recursion protection.
+The value of this setting is the maximum level of nested functions that are
+allowed before the script will be aborted.</div>
+<a name='overload_var_dump'></a>
+<hr class='light'/>
+<div class='name'>xdebug.overload_var_dump</div>
+Type: <span class='type'>boolean</span>, Default value: <span class='default'>1</span>, Introduced in <span class='type'>Xdebug > 2.1</span>
+<div class='description'><p>By default Xdebug overloads var_dump() with its own improved version
+		for displaying variables when the html_errors php.ini setting is set to
+		1. In case you do not want that, you can set this setting to 0, but
+		check first if it's not smarter to turn off html_errors.</p>
+		<p>You can also use <code>2</code> as value for this setting. Besides
+		formatting the var_dump() output nicely, it will also add filename and 
+		line number to the output. The <a href="all_settings.htm#file_link_format" tppabs="http://www.xdebug.org/docs/all_settings#file_link_format">xdebug.file_link_format</a> setting is also
+		respected. <i>(New in Xdebug 2.3)</i></p></div>
+<a name='profiler_append'></a>
+<hr class='light'/>
+<div class='name'>xdebug.profiler_append</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>0</span>
+<div class='description'>When this setting is set to 1, profiler files will not be overwritten when
+a new request would map to the same file (depnding on the <a href="all_settings.htm#profiler_output_name" tppabs="http://www.xdebug.org/docs/all_settings#profiler_output_name">xdebug.profiler_output_name</a> setting.
+Instead the file will be appended to with the new profile.</div>
+<a name='profiler_enable'></a>
+<hr class='light'/>
+<div class='name'>xdebug.profiler_enable</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>0</span>
+<div class='description'>Enables Xdebug's profiler which creates files in the
+<a href="all_settings.htm#profiler_output_dir" tppabs="http://www.xdebug.org/docs/all_settings#profiler_output_dir">profile output directory</a>.  Those files can be
+read by KCacheGrind to visualize your data.  This setting can not be set in
+your script with ini_set(). If you want to selectively enable the profiler,
+please set <a href="all_settings.htm#profiler_enable_trigger" tppabs="http://www.xdebug.org/docs/all_settings#profiler_enable_trigger">xdebug.profiler_enable_trigger</a> to 1 <strong>instead</strong> of using
+this setting.</div>
+<a name='profiler_enable_trigger'></a>
+<hr class='light'/>
+<div class='name'>xdebug.profiler_enable_trigger</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>0</span>
+<div class='description'>When this setting is set to 1, you can trigger the generation of profiler
+files by using the XDEBUG_PROFILE GET/POST parameter, or set a cookie with the
+name XDEBUG_PROFILE. This will then write the profiler data to
+<a href="all_settings.htm#profiler_output_dir" tppabs="http://www.xdebug.org/docs/all_settings#profiler_output_dir">defined directory</a>. In order to prevent the profiler
+to generate profile files for each request, you need to set
+<a href="all_settings.htm#profiler_enable" tppabs="http://www.xdebug.org/docs/all_settings#profiler_enable">xdebug.profiler_enable</a> to 0.</div>
+<a name='profiler_output_dir'></a>
+<hr class='light'/>
+<div class='name'>xdebug.profiler_output_dir</div>
+Type: <span class='type'>string</span>, Default value: <span class='default'>/tmp</span>
+<div class='description'>The directory where the profiler output will be written to, make sure that
+the user who the PHP will be running as has write permissions to that
+directory. This setting can not be set in your script with ini_set().</div>
+<a name='profiler_output_name'></a>
+<hr class='light'/>
+<div class='name'>xdebug.profiler_output_name</div>
+Type: <span class='type'>string</span>, Default value: <span class='default'>cachegrind.out.%p</span>
+<div class='description'><p>This setting determines the name of the file that is used to dump
+traces into. The setting specifies the format with format specifiers, very
+similar to sprintf() and strftime(). There are several format specifiers
+that can be used to format the file name.</p>
+
+<p>See the <a href="all_settings.htm#trace_output_name" tppabs="http://www.xdebug.org/docs/all_settings#trace_output_name">xdebug.trace_output_name</a> documentation for the supported
+specifiers.</p>
+</div>
+<a name='remote_autostart'></a>
+<hr class='light'/>
+<div class='name'>xdebug.remote_autostart</div>
+Type: <span class='type'>boolean</span>, Default value: <span class='default'>0</span>
+<div class='description'>Normally you need to use a specific HTTP GET/POST variable to start
+remote debugging (see <a href="remote.htm" tppabs="http://www.xdebug.org/docs/remote">Remote Debugging</a>). When
+this setting is set to 1, Xdebug will always attempt to start a remote
+debugging session and try to connect to a client, even if the GET/POST/COOKIE
+variable was not present.</div>
+<a name='remote_connect_back'></a>
+<hr class='light'/>
+<div class='name'>xdebug.remote_connect_back</div>
+Type: <span class='type'>boolean</span>, Default value: <span class='default'>0</span>, Introduced in <span class='type'>Xdebug > 2.1</span>
+<div class='description'>If enabled, the <a href="all_settings.htm#remote_host" tppabs="http://www.xdebug.org/docs/all_settings#remote_host">xdebug.remote_host</a> setting is ignored and Xdebug will
+try to connect to the client that made the HTTP request. It checks
+the $_SERVER['REMOTE_ADDR'] variable to find out which IP address to use.
+Please note that there is <b>no</b> filter available, and anybody who can
+connect to the webserver will then be able to start a debugging session,
+even if their address does not match <a href="all_settings.htm#remote_host" tppabs="http://www.xdebug.org/docs/all_settings#remote_host">xdebug.remote_host</a>.</div>
+<a name='remote_cookie_expire_time'></a>
+<hr class='light'/>
+<div class='name'>xdebug.remote_cookie_expire_time</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>3600</span>, Introduced in <span class='type'>Xdebug > 2.1</span>
+<div class='description'>This setting can be used to increase (or decrease) the time that the
+		remote debugging session stays alive via the session cookie.</div>
+<a name='remote_enable'></a>
+<hr class='light'/>
+<div class='name'>xdebug.remote_enable</div>
+Type: <span class='type'>boolean</span>, Default value: <span class='default'>0</span>
+<div class='description'>This switch controls whether Xdebug should try to contact a debug client
+which is listening on the host and port as set with the settings
+<a href="all_settings.htm#remote_host" tppabs="http://www.xdebug.org/docs/all_settings#remote_host">xdebug.remote_host</a> and
+<a href="all_settings.htm#remote_port" tppabs="http://www.xdebug.org/docs/all_settings#remote_port">xdebug.remote_port</a>. If a connection can not be established the script will just
+continue as if this setting was 0.</div>
+<a name='remote_handler'></a>
+<hr class='light'/>
+<div class='name'>xdebug.remote_handler</div>
+Type: <span class='type'>string</span>, Default value: <span class='default'>dbgp</span>
+<div class='description'><p>Can be either 'php3' which selects the old <a
+href="javascript:if(confirm('http://www.php.net/manual/en/debugger.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://www.php.net/manual/en/debugger.php'" tppabs="http://www.php.net/manual/en/debugger.php">PHP 3 style debugger</a>
+output, 'gdb' which enables the GDB like debugger interface or 'dbgp' - the
+<a href="javascript:if(confirm('http://xdebug.org/docs-dbgp.php  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://xdebug.org/docs-dbgp.php'" tppabs="http://xdebug.org/docs-dbgp.php">debugger protocol</a>. The DBGp protocol is
+the only supported protocol.</p>
+<p><b>Note</b>: Xdebug 2.1 and later only support 'dbgp' as protocol.</p>
+</div>
+<a name='remote_host'></a>
+<hr class='light'/>
+<div class='name'>xdebug.remote_host</div>
+Type: <span class='type'>string</span>, Default value: <span class='default'>localhost</span>
+<div class='description'>Selects the host where the debug client is running, you can either use a
+host name or an IP address. This setting is ignored if
+<a href="all_settings.htm#remote_connect_back" tppabs="http://www.xdebug.org/docs/all_settings#remote_connect_back">xdebug.remote_connect_back</a> is enabled.</div>
+<a name='remote_log'></a>
+<hr class='light'/>
+<div class='name'>xdebug.remote_log</div>
+Type: <span class='type'>string</span>, Default value: <span class='default'></span>
+<div class='description'>If set to a value, it is used as filename to a file to which all remote
+debugger communications are logged. The file is always opened in append-mode,
+and will therefore not be overwritten by default. There is no concurrency
+protection available. The format of the file looks something like:
+<pre>
+Log opened at 2007-05-27 14:28:15
+-&gt; &lt;init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/x ... ight&gt;&lt;/init>
+
+&lt;- step_into -i 1
+-&gt; &lt;response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/db ... &gt;&lt;/response&gt;
+</pre></div>
+<a name='remote_mode'></a>
+<hr class='light'/>
+<div class='name'>xdebug.remote_mode</div>
+Type: <span class='type'>string</span>, Default value: <span class='default'>req</span>
+<div class='description'><p>Selects when a debug connection is initiated. This setting can have two
+different values:</p>
+<dl>
+<dt>req</dt>
+<dd>Xdebug will try to connect to the debug client as soon as the script
+starts.</dd>
+<dt>jit</dt>
+<dd>Xdebug will only try to connect to the debug client as soon as an error
+condition occurs.</dd>
+</dl></div>
+<a name='remote_port'></a>
+<hr class='light'/>
+<div class='name'>xdebug.remote_port</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>9000</span>
+<div class='description'>The port to which Xdebug tries to connect on the remote host. Port
+9000 is the default for both the client and the bundled debugclient.
+As many clients use this port number, it is best to leave this setting
+unchanged.</div>
+<a name='scream'></a>
+<hr class='light'/>
+<div class='name'>xdebug.scream</div>
+Type: <span class='type'>boolean</span>, Default value: <span class='default'>0</span>, Introduced in <span class='type'>Xdebug >= 2.1</span>
+<div class='description'>If this setting is 1, then Xdebug will disable the @ (shut-up)
+		operator so that notices, warnings and errors are no longer hidden.</div>
+<a name='show_exception_trace'></a>
+<hr class='light'/>
+<div class='name'>xdebug.show_exception_trace</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>0</span>
+<div class='description'>When this setting is set to 1, Xdebug will show a stack trace whenever
+an exception is raised - even if this exception is actually caught.</div>
+<a name='show_local_vars'></a>
+<hr class='light'/>
+<div class='name'>xdebug.show_local_vars</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>0</span>
+<div class='description'>When this setting is set to something != 0 Xdebug's generated stack dumps
+in error situations will also show all variables in the top-most scope. Beware
+that this might generate a lot of information, and is therefore turned off by
+default.</div>
+<a name='show_mem_delta'></a>
+<hr class='light'/>
+<div class='name'>xdebug.show_mem_delta</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>0</span>
+<div class='description'>When this setting is set to something != 0 Xdebug's human-readable
+generated trace files will show the difference in memory usage between function
+calls. If Xdebug is configured to generate computer-readable trace files then
+they will always show this information.</div>
+<a name='trace_enable_trigger'></a>
+<hr class='light'/>
+<div class='name'>xdebug.trace_enable_trigger</div>
+Type: <span class='type'>boolean</span>, Default value: <span class='default'>0</span>, Introduced in <span class='type'>Xdebug > 2.2</span>
+<div class='description'>When this setting is set to 1, you can trigger the generation of trace
+files by using the XDEBUG_TRACE GET/POST parameter, or set a cookie with the
+name XDEBUG_TRACE. This will then write the trace data to
+<a href="all_settings.htm#trace_output_dir" tppabs="http://www.xdebug.org/docs/all_settings#trace_output_dir">defined directory</a>. In order to prevent Xdebug
+to generate trace files for each request, you need to set
+<a href="all_settings.htm#auto_trace" tppabs="http://www.xdebug.org/docs/all_settings#auto_trace">xdebug.auto_trace</a> to 0.</div>
+<a name='trace_format'></a>
+<hr class='light'/>
+<div class='name'>xdebug.trace_format</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>0</span>
+<div class='description'><p>The format of the trace file.</p>
+<table class='table'>
+<tr><th>Value</th><th>Description</th></tr>
+<tr><td class='ctr'>0</td><td>shows a human readable indented trace file with:
+<i>time index</i>, <i>memory usage</i>, <i>memory delta</i> (if the setting <a
+href='#show_mem_delta'>xdebug.show_mem_delta</a> is enabled), <i>level</i>, <i>function name</i>,
+<i>function parameters</i> (if the setting <a href="all_settings.htm#collect_params" tppabs="http://www.xdebug.org/docs/all_settings#collect_params">xdebug.collect_params</a> is enabled),
+<i>filename</i> and <i>line number</i>.</td></tr>
+
+<tr><td class='ctr'>1</td><td>writes a computer readable format which has two
+different records. There are different records for entering a stack frame, and
+leaving a stack frame. The table below lists the fields in each type of record.
+Fields are tab separated.
+</td></tr>
+
+<tr><td class='ctr'>2</td><td>writes a trace formatted in (simple) HTML.</td></tr>
+</table>
+<p>
+Fields for the computerized format:
+</p>
+<table class='table'>
+<tr><th>Record type</th><th class='ctr'>1</th><th class='ctr'>2</th><th class='ctr'>3</th><th class='ctr'>4</th><th class='ctr'>5</th><th class='ctr'>6</th><th class='ctr'>7</th><th class='ctr'>8</th><th class='ctr'>9</th><th class='ctr'>10</th><th class='ctr'>11</th><th class='ctr'>12 - ...</th></tr>
+<tr>
+	<th class='ctr'>Entry</th>
+	<td>level</td>
+	<td>function&nbsp;#</td>
+	<td>always&nbsp;'0'</td>
+	<td>time index</td>
+	<td>memory usage</td>
+	<td>function name</td>
+	<td>user-defined&nbsp;(1) or internal function&nbsp;(0)</td>
+	<td>name of the include/require file</td>
+	<td>filename</td>
+	<td>line number</td>
+	<td>no. of parameters</td>
+	<td>parameters (as many as specified in field 11) - tab separated</td>
+</tr>
+<tr><th class='ctr'>Exit</th>
+	<td>level</td>
+	<td>function&nbsp;#</td>
+	<td>always&nbsp;'1'</td>
+	<td>time index</td>
+	<td>memory usage</td>
+	<td colspan='7' class='ctr'><i>empty</i></td>
+</tr>
+<tr><th class='ctr'>Return</th>
+	<td>level</td>
+	<td>function&nbsp;#</td>
+	<td>always&nbsp;'R'</td>
+	<td colspan='2' class='ctr'><i>empty</i></td>
+	<td>return value</td>
+	<td colspan='6' class='ctr'><i>empty</i></td>
+</tr>
+</table>
+
+<p>
+See the introduction of <a href="execution_trace.htm" tppabs="http://www.xdebug.org/docs/execution_trace">Function Traces</a> for a few examples.
+</p></div>
+<a name='trace_options'></a>
+<hr class='light'/>
+<div class='name'>xdebug.trace_options</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>0</span>
+<div class='description'>When set to '1' the trace files will be appended to, instead of
+being overwritten in subsequent requests.</div>
+<a name='trace_output_dir'></a>
+<hr class='light'/>
+<div class='name'>xdebug.trace_output_dir</div>
+Type: <span class='type'>string</span>, Default value: <span class='default'>/tmp</span>
+<div class='description'>The directory where the tracing files will be written to, make sure that
+the user who the PHP will be running as has write permissions to that
+directory.</div>
+<a name='trace_output_name'></a>
+<hr class='light'/>
+<div class='name'>xdebug.trace_output_name</div>
+Type: <span class='type'>string</span>, Default value: <span class='default'>trace.%c</span>
+<div class='description'><p>This setting determines the name of the file that is used to dump
+traces into. The setting specifies the format with format specifiers, very
+similar to sprintf() and strftime(). There are several format specifiers
+that can be used to format the file name. The '.xt' extension is always added
+automatically.</p>
+
+<p>
+The possible format specifiers are:
+</p>
+<table class='table'>
+<tr><th>Specifier</th><th>Meaning</th><th>Example Format</th><th>Example Filename</th></tr>
+<tr><td class='ctr'>%c</td><td>crc32 of the current working directory</td><td>trace.%c</td><td>trace.1258863198.xt</td></tr>
+<tr><td class='ctr'>%p</td><td>pid</td><td>trace.%p</td><td>trace.5174.xt</td></tr>
+<tr><td class='ctr'>%r</td><td>random number</td><td>trace.%r</td><td>trace.072db0.xt</td></tr>
+<tr><td class='ctr'>%s</td><td><p>script name <sup>2</sup></p></td><td>cachegrind.out.%s</td><td>cachegrind.out._home_httpd_html_test_xdebug_test_php</td></tr>
+<tr><td class='ctr'>%t</td><td>timestamp (seconds)</td><td>trace.%t</td><td>trace.1179434742.xt</td></tr>
+<tr><td class='ctr'>%u</td><td>timestamp (microseconds)</td><td>trace.%u</td><td>trace.1179434749_642382.xt</td></tr>
+<tr><td class='ctr'>%H</td><td>$_SERVER['HTTP_HOST']</td><td>trace.%H</td><td>trace.kossu.xt</td></tr>
+<tr><td class='ctr'>%R</td><td>$_SERVER['REQUEST_URI']</td><td>trace.%R</td><td>trace._test_xdebug_test_php_var=1_var2=2.xt</td></tr>
+<tr><td class='ctr'>%U</td><td>$_SERVER['UNIQUE_ID'] <sup>3</sup></td><td>trace.%U</td><td>trace.TRX4n38AAAEAAB9gBFkAAAAB.xt</td></tr>
+<tr><td class='ctr'>%S</td><td>session_id (from $_COOKIE if set)</td><td>trace.%S</td><td>trace.c70c1ec2375af58f74b390bbdd2a679d.xt</td></tr>
+<tr><td class='ctr'>%%</td><td>literal %</td><td>trace.%%</td><td>trace.%%.xt</td></tr>
+</table>
+<p><sup>2</sup></a> This one is not available for trace file names.</p>
+<p><sup>3</sup></a> New in version 2.2. This one is set by Apache's <a href="javascript:if(confirm('http://httpd.apache.org/docs/2.2/en/mod/mod_unique_id.html  \n\n该文件无法用 Teleport Ultra 下载, 因为 它是一个域或路径外部被设置为它的启始地址的地址。  \n\n你想在服务器上打开它?'))window.location='http://httpd.apache.org/docs/2.2/en/mod/mod_unique_id.html'" tppabs="http://httpd.apache.org/docs/2.2/en/mod/mod_unique_id.html">mod_unique_id module</a></p>
+</div>
+<a name='var_display_max_children'></a>
+<hr class='light'/>
+<div class='name'>xdebug.var_display_max_children</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>128</span>
+<div class='description'><p>Controls the amount of array children and object's properties are shown
+when variables are displayed with either <a href="all_functions.htm#xdebug_var_dump" tppabs="http://www.xdebug.org/docs/all_functions#xdebug_var_dump">xdebug_var_dump()</a>,
+<a href="all_settings.htm#show_local_vars" tppabs="http://www.xdebug.org/docs/all_settings#show_local_vars">xdebug.show_local_vars</a> or through <a href="execution_trace.htm" tppabs="http://www.xdebug.org/docs/execution_trace">Function Traces</a>.</p>
+<p>To disable any limitation, use <i>-1</i> as value.</p>
+<p>This setting does not have any influence on the number of children that is
+send to the client through the <a href="remote.htm" tppabs="http://www.xdebug.org/docs/remote">Remote Debugging</a> feature.</p></div>
+<a name='var_display_max_data'></a>
+<hr class='light'/>
+<div class='name'>xdebug.var_display_max_data</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>512</span>
+<div class='description'><p>Controls the maximum string length that is shown
+when variables are displayed with either <a href="all_functions.htm#xdebug_var_dump" tppabs="http://www.xdebug.org/docs/all_functions#xdebug_var_dump">xdebug_var_dump()</a>,
+<a href="all_settings.htm#show_local_vars" tppabs="http://www.xdebug.org/docs/all_settings#show_local_vars">xdebug.show_local_vars</a> or through <a href="execution_trace.htm" tppabs="http://www.xdebug.org/docs/execution_trace">Function Traces</a>.
+<p>To disable any limitation, use <i>-1</i> as value.</p>
+<p>This setting does not have any influence on the number of children that is
+send to the client through the <a href="remote.htm" tppabs="http://www.xdebug.org/docs/remote">Remote Debugging</a> feature.</p></div>
+<a name='var_display_max_depth'></a>
+<hr class='light'/>
+<div class='name'>xdebug.var_display_max_depth</div>
+Type: <span class='type'>integer</span>, Default value: <span class='default'>3</span>
+<div class='description'><p>Controls how many nested levels of array elements and object properties are
+when variables are displayed with either <a href="all_functions.htm#xdebug_var_dump" tppabs="http://www.xdebug.org/docs/all_functions#xdebug_var_dump">xdebug_var_dump()</a>,
+<a href="all_settings.htm#show_local_vars" tppabs="http://www.xdebug.org/docs/all_settings#show_local_vars">xdebug.show_local_vars</a> or through <a href="execution_trace.htm" tppabs="http://www.xdebug.org/docs/execution_trace">Function Traces</a>.</p>
+<p>The maximum value you can select is 1023. You can also use <i>-1</i> as
+value to select this maximum number.</p>
+<p>This setting does not have any influence on the number of children that is
+send to the client through the <a href="remote.htm" tppabs="http://www.xdebug.org/docs/remote">Remote Debugging</a> feature.</p></div>
+</div>
+<hr />
+</div>
+<!-- MAIN FEATURE END -->
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="4">
+<div class="copy">
+This site and all of its contents are
+Copyright &copy; 2002-2014 by Derick Rethans.<br />
+All rights reserved.
+</div>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>
