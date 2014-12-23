@@ -176,5 +176,5 @@ h6, .h6 {
 	padding:20px;
 }
 .contentBox img{
-	width:100%;
+	max-width:100%;
 }
